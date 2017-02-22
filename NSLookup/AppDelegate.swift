@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+//		resolve(host: "baidu.com", using: "223.5.5.5")
+		if let userDNS = UserDefaults.standard.string(forKey: "dns"), userDNS != "" {
+			dns = userDNS
+		}
 		return true
 	}
 

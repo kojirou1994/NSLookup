@@ -12,6 +12,9 @@
 		E39BE0C01E5D8FFF00578D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39BE0BE1E5D8FFF00578D5B /* Main.storyboard */; };
 		E39BE0C21E5D8FFF00578D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39BE0C11E5D8FFF00578D5B /* Assets.xcassets */; };
 		E39BE0C51E5D8FFF00578D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39BE0C31E5D8FFF00578D5B /* LaunchScreen.storyboard */; };
+		E39BE0D01E5D903900578D5B /* DNSQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BE0CF1E5D903900578D5B /* DNSQuery.swift */; };
+		E39BE0D31E5D9CDA00578D5B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E39BE0D21E5D9CDA00578D5B /* libresolv.9.tbd */; };
+		E3D7921C1E5DB5AA00B48CF5 /* DNSConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		E39BE0C11E5D8FFF00578D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39BE0C41E5D8FFF00578D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E39BE0C61E5D8FFF00578D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39BE0CC1E5D901400578D5B /* NSLookup-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLookup-Bridging-Header.h"; sourceTree = "<group>"; };
+		E39BE0CF1E5D903900578D5B /* DNSQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSQuery.swift; sourceTree = "<group>"; };
+		E39BE0D21E5D9CDA00578D5B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSConfigViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39BE0D31E5D9CDA00578D5B /* libresolv.9.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				E39BE0B91E5D8FFF00578D5B /* NSLookup */,
 				E39BE0B81E5D8FFF00578D5B /* Products */,
+				E39BE0D11E5D9CDA00578D5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,23 @@
 			children = (
 				E39BE0BA1E5D8FFF00578D5B /* AppDelegate.swift */,
 				E39BE0BC1E5D8FFF00578D5B /* ViewController.swift */,
+				E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */,
 				E39BE0BE1E5D8FFF00578D5B /* Main.storyboard */,
 				E39BE0C11E5D8FFF00578D5B /* Assets.xcassets */,
 				E39BE0C31E5D8FFF00578D5B /* LaunchScreen.storyboard */,
 				E39BE0C61E5D8FFF00578D5B /* Info.plist */,
+				E39BE0CF1E5D903900578D5B /* DNSQuery.swift */,
+				E39BE0CC1E5D901400578D5B /* NSLookup-Bridging-Header.h */,
 			);
 			path = NSLookup;
+			sourceTree = "<group>";
+		};
+		E39BE0D11E5D9CDA00578D5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39BE0D21E5D9CDA00578D5B /* libresolv.9.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +117,7 @@
 					E39BE0B61E5D8FFF00578D5B = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = W3LXES65B7;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39BE0BD1E5D8FFF00578D5B /* ViewController.swift in Sources */,
+				E39BE0D01E5D903900578D5B /* DNSQuery.swift in Sources */,
+				E3D7921C1E5DB5AA00B48CF5 /* DNSConfigViewController.swift in Sources */,
 				E39BE0BB1E5D8FFF00578D5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -263,11 +286,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W3LXES65B7;
 				INFOPLIST_FILE = NSLookup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Putotyra.NSLookup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NSLookup/NSLookup-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W3LXES65B7;
 				INFOPLIST_FILE = NSLookup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Putotyra.NSLookup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NSLookup/NSLookup-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +334,7 @@
 				E39BE0CB1E5D8FFF00578D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
