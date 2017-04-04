@@ -14,7 +14,7 @@ class DNSConfigViewController: UIViewController {
 	
 	
 	@IBAction func doneButtonTapped(_ sender: Any) {
-		if let newDns = dnsServerTextField.text {
+		if let newDns = dnsServerTextField.text, newDns != "" {
 			dns = newDns
 		}
 		self.dismiss(animated: true, completion: nil)
