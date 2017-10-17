@@ -14,11 +14,15 @@
 		E39BE0C51E5D8FFF00578D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39BE0C31E5D8FFF00578D5B /* LaunchScreen.storyboard */; };
 		E39BE0D01E5D903900578D5B /* DNSQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BE0CF1E5D903900578D5B /* DNSQuery.swift */; };
 		E39BE0D31E5D9CDA00578D5B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E39BE0D21E5D9CDA00578D5B /* libresolv.9.tbd */; };
+		E3CEBDC21EFE1BE900DAEC0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3CEBDC41EFE1BE900DAEC0F /* Localizable.strings */; };
+		E3CEBDC71EFE1BE900DAEC0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3CEBDC91EFE1BE900DAEC0F /* InfoPlist.strings */; };
 		E3D7921C1E5DB5AA00B48CF5 /* DNSConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */; };
 		E3E252A11EF7F8AE00D01EB1 /* ResolveResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E252A01EF7F8AE00D01EB1 /* ResolveResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E33620F21EFE1AA400C99F43 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E33620F31EFE1AA400C99F43 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E39BE0B71E5D8FFF00578D5B /* NSLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39BE0BA1E5D8FFF00578D5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39BE0BC1E5D8FFF00578D5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,8 @@
 		E39BE0CC1E5D901400578D5B /* NSLookup-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLookup-Bridging-Header.h"; sourceTree = "<group>"; };
 		E39BE0CF1E5D903900578D5B /* DNSQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSQuery.swift; sourceTree = "<group>"; };
 		E39BE0D21E5D9CDA00578D5B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		E3CEBDC31EFE1BE900DAEC0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E3CEBDC81EFE1BE900DAEC0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSConfigViewController.swift; sourceTree = "<group>"; };
 		E3E252A01EF7F8AE00D01EB1 /* ResolveResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +71,8 @@
 		E39BE0B91E5D8FFF00578D5B /* NSLookup */ = {
 			isa = PBXGroup;
 			children = (
+				E3CEBDC91EFE1BE900DAEC0F /* InfoPlist.strings */,
+				E3CEBDC41EFE1BE900DAEC0F /* Localizable.strings */,
 				E39BE0BA1E5D8FFF00578D5B /* AppDelegate.swift */,
 				E39BE0BC1E5D8FFF00578D5B /* ViewController.swift */,
 				E3D7921B1E5DB5AA00B48CF5 /* DNSConfigViewController.swift */,
@@ -149,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39BE0C51E5D8FFF00578D5B /* LaunchScreen.storyboard in Resources */,
+				E3CEBDC21EFE1BE900DAEC0F /* Localizable.strings in Resources */,
 				E39BE0C21E5D8FFF00578D5B /* Assets.xcassets in Resources */,
 				E39BE0C01E5D8FFF00578D5B /* Main.storyboard in Resources */,
+				E3CEBDC71EFE1BE900DAEC0F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E39BE0BF1E5D8FFF00578D5B /* Base */,
+				E33620F21EFE1AA400C99F43 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -184,8 +195,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				E39BE0C41E5D8FFF00578D5B /* Base */,
+				E33620F31EFE1AA400C99F43 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E3CEBDC41EFE1BE900DAEC0F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3CEBDC31EFE1BE900DAEC0F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E3CEBDC91EFE1BE900DAEC0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3CEBDC81EFE1BE900DAEC0F /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -195,6 +223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -252,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

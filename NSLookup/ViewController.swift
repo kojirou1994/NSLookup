@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 	}
 }
 
-var dns = "223.5.5.5" {
+var dns = NSLocalizedString("8.8.8.8", comment: "Default DNS IP Address.") {
 	didSet {
 		UserDefaults.standard.set(dns, forKey: "dns")
 	}
