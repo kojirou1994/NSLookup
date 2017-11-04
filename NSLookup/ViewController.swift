@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 			DispatchQueue.main.async {
 				self.tableView.reloadData()
 			}
-            try? result.resolve(using: dns)
+            result.resolve(using: dns)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -80,7 +80,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		cell.textLabel?.text = results[indexPath.row].domain
-        cell.detailTextLabel?.text = results[indexPath.row].status == .success ? results[indexPath.row].address : results[indexPath.row].status.description
+        cell.detailTextLabel?.text = results[indexPath.row].status.description
 		return cell
 	}
 }

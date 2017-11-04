@@ -12,7 +12,6 @@ class DNSConfigViewController: UIViewController {
 
 	@IBOutlet weak var dnsServerTextField: UITextField!
 	
-	
 	@IBAction func doneButtonTapped(_ sender: Any) {
 		if let newDns = dnsServerTextField.text, newDns != "" {
 			dns = newDns

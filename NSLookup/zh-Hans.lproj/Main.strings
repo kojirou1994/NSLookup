@@ -1,15 +1,18 @@
-/* Class = "UISearchBar"; placeholder = "Host"; ObjectID = "3pe-VN-AMD"; */
-"3pe-VN-AMD.placeholder" = "Host";
+/* Class = "UISearchBar"; placeholder = "Domain"; ObjectID = "3pe-VN-AMD"; */
+"3pe-VN-AMD.placeholder" = "域名";
+
+/* Class = "UIBarButtonItem"; title = "Clear"; ObjectID = "Kbb-2b-Vy9"; */
+"Kbb-2b-Vy9.title" = "清屏";
 
 /* Class = "UINavigationItem"; title = "Configuration"; ObjectID = "Sk8-IY-I38"; */
-"Sk8-IY-I38.title" = "Configuration";
+"Sk8-IY-I38.title" = "设置";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "lfk-OC-jVH"; */
-"lfk-OC-jVH.text" = "Title";
+/* Class = "UILabel"; text = "Domain"; ObjectID = "lfk-OC-jVH"; */
+"lfk-OC-jVH.text" = "域名";
 
 /* Class = "UILabel"; text = "DNS Server:"; ObjectID = "swK-ii-pae"; */
-"swK-ii-pae.text" = "DNS Server:";
+"swK-ii-pae.text" = "DNS 服务器:";
 
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "xSe-5z-Cf0"; */
-"xSe-5z-Cf0.text" = "Subtitle";
+/* Class = "UILabel"; text = "Result"; ObjectID = "xSe-5z-Cf0"; */
+"xSe-5z-Cf0.text" = "结果";
 

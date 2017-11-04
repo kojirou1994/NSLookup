@@ -9,23 +9,23 @@
 import Foundation
 
 class ResolveResult {
+    
     let domain: String
-    var address: String?
     var status: Status = .resolving
     
     enum Status: CustomStringConvertible {
-        case success
-        case failed
+        case success(address: String)
+        case failed(message: String)
         case resolving
         
         var description: String {
             switch self {
-            case .failed:
-                return "Failed"
+            case .failed(let message):
+                return "Failed: \(message)"
             case .resolving:
                 return "Resolving"
-            case .success:
-                return "Success"
+            case .success(let address):
+                return address
             }
         }
     }
@@ -37,14 +37,13 @@ class ResolveResult {
         self.domain = domain
     }
     
-    func resolve(using dnsServer: String) throws {
+    func resolve(using dnsServer: String) {
         let res = res_9_state.allocate(capacity: 1)
         setupDnsServer(res: res, dnsServer: dnsServer)
         guard let ip = queryIP(res: res, host: domain) else {
-            self.status = .failed
-            throw NSError()
+            self.status = .failed(message: NSLocalizedString("DNS Error.", comment: "获取dns错误提示信息。"))
+            return
         }
-        self.address = ip
-        self.status = .success
+        self.status = .success(address: ip)
     }
 }

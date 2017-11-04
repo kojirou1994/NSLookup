@@ -1,3 +1,6 @@
 /* Default DNS IP Address. */
 "8.8.8.8" = "223.5.5.5";
 
+/* 获取dns错误提示信息。 */
+"DNS Error." = "DNS错误。";
+
