@@ -31,8 +31,8 @@ class ResolveResult {
     }
     
     init?(domain: String) {
-        guard domain.characters.count != 0 else {
-            return nil
+        guard domain.count != 0 else {
+            return nil 
         }
         self.domain = domain
     }
