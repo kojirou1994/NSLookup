@@ -4,3 +4,9 @@
 /* 获取dns错误提示信息。 */
 "DNS Error." = "DNS错误。";
 
+/* DNS查询失败 */
+"Failed: " = "查询失败： ";
+
+/* DNS正在查询。 */
+"Resolving" = "查询中";
+

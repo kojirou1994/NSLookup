@@ -21,9 +21,9 @@ class ResolveResult {
         var description: String {
             switch self {
             case .failed(let message):
-                return "Failed: \(message)"
+                return NSLocalizedString("Failed: ", comment: "DNS查询失败") + message
             case .resolving:
-                return "Resolving"
+                return NSLocalizedString("Resolving", comment: "DNS正在查询。")
             case .success(let address):
                 return address
             }
